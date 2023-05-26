@@ -108,45 +108,42 @@ const styles = StyleSheet.create({
     parent: {
         display: "flex",
         flexDirection: "row",
-        borderWidth:1,
-        borderRadius: 80,
-        borderColor: "#00000",
-        backgroundColor: '#FFFFF',
-        paddingLeft: "6%",
+        borderColor: "#000",
+        backgroundColor: 'black',
+        paddingLeft: "21%",
         paddingRight: "6%",
         paddingTop: ".5%",
         paddingBottom: ".5%",
-        maxWidth: "63%"
+        maxWidth: "70%"
     },
 
     child: {
       fontSize: 36,
-      color: "#AAAAA",
+      color: "white",
     },
 
     buttonParent: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
-        marginTop: "12%",
-        marginBottom: "16%"
+        marginTop: "20%",
+        marginBottom: "10%"
     },
 
     button: {
-        backgroundColor: "#11111",
-        paddingTop: "5%",
-        paddingBottom: "5%",
+        backgroundColor: "#111",
+        paddingTop: "4%",
         paddingLeft: "5%",
         paddingRight: "5%",
         display: "flex",
-        borderRadius: 20,
+        borderRadius: 100,
         borderWidth: 1,
-        borderColor: "#fffff",
+        borderColor: "#fff",
         height: 60,
     },
 
     buttonText: {
-        color: "#fffff",
+        color: "#fff",
         fontSize: 20,
         alignSelf: "center"
     }
