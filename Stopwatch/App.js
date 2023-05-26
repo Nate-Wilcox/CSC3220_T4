@@ -6,7 +6,7 @@ import StopwatchContainer from "./stopwatch/stopwatch.container";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Stopwatch/Timer Project</Text>
+      <Text style={styles.title}>Stopwatch</Text>
 
       <StopwatchContainer />
 
@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     color: "white",
-    marginBottom: "8%"
-  }
+    marginTop: "25%",
+    marginBottom: "8%",
+  },
 
 });
