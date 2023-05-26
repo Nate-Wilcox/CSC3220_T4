@@ -18,16 +18,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     display: "flex",
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: "8%",
-    borderRadius: 10,
+    borderRadius: 0,
   },
 
   title: {
     fontSize: 30,
-    color: "#000",
+    color: "white",
     marginBottom: "8%"
   }
 
