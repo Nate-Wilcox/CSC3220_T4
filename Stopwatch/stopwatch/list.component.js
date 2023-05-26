@@ -1,38 +1,41 @@
 import React, {Component} from 'react';
-import { ScrollView, FlatList, StyleSheet, Text } from 'react-native';
+import { FlatList, StyleSheet, Text, View, Dimensions } from 'react-native';
 
 let padToTwo = (number) => (number <= 9 ? `0${number}`: number);
 
 class ListComponent extends Component {
     render() {
         return (
-            <ScrollView style={styles.scroll}>
+            <View style= {styles.container}>
                 <FlatList
                     data={this.props.lap}
-                    renderItem={({item, index}) => <Text key={index} style={styles.item}>{`#${index+1}            `}{padToTwo(item.min)}:{padToTwo(item.sec)}:{padToTwo(item.msec)}</Text>}
+                    renderItem={({item, index}) => <Text key={index} style={styles.item}>{`#${index+1}                                         `}{padToTwo(item.min)}:{padToTwo(item.sec)}:{padToTwo(item.msec)}</Text>}
                 />
-            </ScrollView>
+            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    scroll: {
-        maxHeight: "63%",
-        backgroundColor: "#000",
+    container: {
+        width: Dimensions.get('window').width,
+        backgroundColor: "black",
+        borderColor: "grey",
+        padding: 0,
     },
 
     item: {
         padding: 10,
-        borderColor: "gray",
-        borderWidth: 5,
+        borderTopColor: "white",
+        borderBottomColor: "white",
+        borderWidth: 1,
         borderStyle: "solid",
         fontSize: 22,
-        height: 44,
+        height: 50,
         color: "#fff",
-        textAlign: "center",
-        backgroundColor: "lightgray",
-        marginBottom: 5,
+        textAlign: "auto",
+        backgroundColor: "black",
+        marginBottom: 0,
     },
 })
 
