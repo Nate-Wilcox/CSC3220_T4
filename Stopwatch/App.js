@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+
 import StopwatchContainer from "./stopwatch/stopwatch.container";
+import headerComponent from "./stopwatch/header.component";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <headerComponent />
       <Text style={styles.title}>Stopwatch</Text>
 
       <StopwatchContainer />
@@ -31,5 +34,4 @@ const styles = StyleSheet.create({
     marginTop: "25%",
     marginBottom: "8%",
   },
-
 });
